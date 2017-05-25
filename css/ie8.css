@@ -1,0 +1,31 @@
+/* CLEARFIX HACK */
+.row,
+.clr,
+.group { zoom: 1; } /* IE6 */
+
+*:first-child+html .row,
+*:first-child+html .clr,
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+.col {
+		margin-left: 2%;
+	}
+	
+	.span_1 { width: 6.5%; }
+	.span_2 { width: 15.0%; }
+	.span_3 { width: 23.5%; }
+	.span_4 { width: 32.0%; }
+	.span_5 { width: 40.5%; }
+	.span_6 { width: 49.0%; }
+	.span_7 { width: 57.5%; }
+	.span_8 { width: 66.0%; }
+	.span_9 { width: 74.5%; }
+	.span_10 { width: 83.0%; }
+	.span_11 { width: 91.5%; }
+	.span_12 { width: 100%;
+}
+
+#searchform,
+#searchform input {
+	width: 100%;
+}

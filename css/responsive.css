@@ -1,0 +1,67 @@
+/* All Responsive
+================================================== */
+@media only screen and (max-width: 959px) { 
+	/*navigation*/
+	#navigation { position: inherit; height: 55px; line-height: 55px; margin-top: 0; background: #efefef; margin-left: -30px; margin-right: -30px; }
+	#navigation .selector { position: absolute; left: 0; top: 0; height: 53px; line-height: 53px; padding: 0; padding-left: 60px; padding-right: 30px; border-right: 1px solid #ddd; color: #888; font-weight: 400; font-size: 12px; text-transform: uppercase; margin: 0; display: block; vertical-align: middle; zoom: 1; cursor: pointer; text-align: left; }
+	#navigation .selector:hover { background: #ddd }
+	#navigation .selector:before { font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 16px; line-height: 16px; text-decoration: inherit; -webkit-font-smoothing: antialiased; line-height: normal; vertical-align: baseline; display: block; position: absolute; content: "\f0c9"; color: #888; left: 30px; top: 50%; margin-top: -8px; }
+	#navigation .selector select { position: absolute; top: 0; left: 0; height: 55px; background: none; width: 100%; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; color: #666 !important; cursor: pointer; }
+	#navigation .selector select:focus { outline: 0 }
+	#navigation .selector option { background: #000; -webkit-appearance: none; padding: 15px 25px; border-color: #303030; }
+	#navigation .selector:hover { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; }
+	#navigation .selector span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+	#navigation .selector { display: inline-block }
+	#navigation ul.dropdown-menu { display: none }
+}
+
+/* Larger then Tablet portrait
+================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+	#related-posts article .related-post-thumbnail { max-width: 35% }
+}
+
+/* Smaller then tablet portrait
+================================================== */
+@media only screen and (max-width: 767px) { 
+	#header-ad { text-align: left }
+	#sidebar { margin-top: 70px; padding-left: 0; }
+	.loop-entry-thumbnail { margin-bottom: 20px }
+	.wpex-one-half,
+	.wpex-one-third,
+	.wpex-two-third,
+	.wpex-three-fourth,
+	.wpex-one-fourth,
+	.wpex-one-fifth,
+	.wpex-two-fifth,
+	.wpex-three-fifth,
+	.wpex-four-fifth,
+	.wpex-one-sixth,
+	.wpex-five-sixth { width: 100%; float: none; margin-right: 0; margin-bottom: 20px; }
+	.wpex-pricing-table > div { margin-bottom: 25px }
+	.wpex-box,
+	.wpex-box.left,
+	.wpex-box.right { float: none; width: 100% !important; }
+	#related-posts article .related-post-thumbnail { max-width: 100%; float: none; margin-right: 0; margin-bottom: 20px; display: block; }
+}
+
+/* Mobile (Landscape)
+================================================== */
+@media only screen and (max-width: 480px) { 
+	#header-ad,
+	#header-social,
+	#home-slider .flex-caption { display: none }
+	#navigation .selector { border-right: 0; width: 100%; padding-left: 30px; }
+	#navigation .selector:before { left: auto; right: 30px; }
+	#logo,
+	#logo img,
+	#logo h2,
+	#site-description { float: none; text-align: center; margin: 0 auto; }
+}
+
+/* Mobile (Portrait)
+================================================== */
+@media only screen and (max-width: 480px) { 
+	#header-ad,
+	#home-slider-wrap { display: none }
+}
