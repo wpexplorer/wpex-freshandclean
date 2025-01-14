@@ -6,21 +6,6 @@
  * @since 1.0
  */
 
-// Theme info
-function wpex_get_theme_info( $return = 'array' ) {
-	$array = array(
-		'name'      => 'Fresh &amp; Clean',
-		'dir'       => get_template_directory_uri() .'/functions/',
-		'url'       => 'http://www.wpexplorer.com/fresh-clean-wordpress-theme-by-wpexplorer/',
-		'changelog' => 'http://www.wpexplorer.com/changelogs/fresh-clean/',
-	);
-	if ( 'array' == $return ) {
-		return $array;
-	} else {
-		return $array[$return];
-	}
-}
-
 // Include admin options
 require_once( get_template_directory() .'/functions/options.php' );
 
@@ -68,14 +53,7 @@ require_once( get_template_directory() . '/functions/post-types/slides.php' );
 
 // Admin only functions
 if ( is_admin() ) {
-	require_once( get_template_directory() . '/functions/updates.php' );
 	require_once( get_template_directory() . '/functions/meta/meta-slides.php' );
-	if ( ! defined( 'WPEX_DISABLE_THEME_ABOUT_PAGE' ) ) {
-		require_once( get_template_directory() . '/functions/welcome.php' );
-	}
-	if ( ! defined( 'WPEX_DISABLE_THEME_DASHBOARD_FEEDS' ) ) {
-		require_once( get_template_directory() . '/functions/dashboard-feed.php' );
-	}
 }
 
 // Front-end functions
